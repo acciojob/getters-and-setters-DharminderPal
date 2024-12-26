@@ -1,14 +1,14 @@
-// //complete this code
-// class Person {}
+//complete this code
+class Person {}
 
-// class Student extends Person {}
+class Student extends Person {}
 
-// class Teacher extends Person {}
+class Teacher extends Person {}
 
-// // Do not change the code below this line
-// window.Person = Person;
-// window.Student = Student;
-// window.Teacher = Teacher;
+// Do not change the code below this line
+window.Person = Person;
+window.Student = Student;
+window.Teacher = Teacher;
 class Person {
     constructor(name, age) {
         this._name = name;  // Store name in an internal property
