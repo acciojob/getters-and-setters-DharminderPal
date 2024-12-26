@@ -1,14 +1,12 @@
 //complete this code
-class Person {}
+// class Person {}
 
-class Student extends Person {}
+// class Student extends Person {}
 
-class Teacher extends Person {}
+// class Teacher extends Person {}
 
 // Do not change the code below this line
-window.Person = Person;
-window.Student = Student;
-window.Teacher = Teacher;
+
 class Person {
     constructor(name, age) {
         this._name = name;  // Store name in an internal property
@@ -47,10 +45,12 @@ class Teacher extends Person {
         console.log(`${this.name} is teaching`);  // Access name via `this.name`
     }
 }
+window.Person = Person;
+window.Student = Student;
+window.Teacher = Teacher;
+// // Example usage
+// const reiv = new Student('Alice', 20);  // Create a Student object
+// reiv.study();  // Logs: Alice is studying
 
-// Example usage
-const reiv = new Student('Alice', 20);  // Create a Student object
-reiv.study();  // Logs: Alice is studying
-
-const suko = new Teacher('Bob', 35);  // Create a Teacher object
+// const suko = new Teacher('Bob', 35);  // Create a Teacher object
 suko.teach();  // Logs: Bob is teaching
