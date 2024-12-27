@@ -1,7 +1,7 @@
 class Person {
   constructor(name, age) {
-    this._name = name; // Using a private-like naming convention for properties
-    this._age = age;
+    this._name = name; // Private variable for name
+    this._age = age;   // Private variable for age
   }
 
   // Getter for name
@@ -10,26 +10,22 @@ class Person {
   }
 
   // Setter for age
-  set age(newAge) {
-    if (typeof newAge === "number" && newAge > 0) {
-      this._age = newAge;
-    } else {
-      console.error("Please provide a valid age.");
-    }
+  set age(age) {
+    this._age = age;
   }
 }
 
-// Subclass: Student
+// Defining the Student class which extends Person
 class Student extends Person {
   study() {
-    console.log(`${this.name} is studying.`);
+    console.log(`${this.name} is studying`);
   }
 }
 
-// Subclass: Teacher
+// Defining the Teacher class which extends Person
 class Teacher extends Person {
   teach() {
-    console.log(`${this.name} is teaching.`);
+    console.log(`${this.name} is teaching`);
   }
 }
 window.Person = Person;
